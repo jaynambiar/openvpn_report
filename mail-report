@@ -10,7 +10,8 @@ filename = sys.argv[1]
 filepath="/root/reports/{}".format(filename)
 
 fp = open(filepath, 'rb')
-
+#fp = open("/root/reports/2020-04-23", 'rb')
+# Create a text/plain message
 msg = MIMEText(fp.read())
 fp.close()
 
